@@ -28,7 +28,7 @@ public class TimerAspect {
                     + " - "
                     + joinPoint.getSignature().getName()
                     + " #("
-                    + (System.currentTimeMillis() - start)/1000
+                    + (System.currentTimeMillis() - start)
                     + ")");
         }
         return null;

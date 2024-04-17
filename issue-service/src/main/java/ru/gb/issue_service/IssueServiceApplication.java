@@ -11,7 +11,7 @@ public class IssueServiceApplication {
         SpringApplication.run(IssueServiceApplication.class, args);
     }
 
-// Добавление бина напрямую = без стартера
+// Добавление бина напрямую => без стартера
 //    @Bean
 //    TimerAspect timerAspect() {
 //        return new TimerAspect();

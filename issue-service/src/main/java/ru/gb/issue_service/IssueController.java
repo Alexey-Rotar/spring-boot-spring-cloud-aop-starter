@@ -4,6 +4,7 @@ import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import ru.ar.Timer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +37,7 @@ public class IssueController {
         return list;
     }
 
+    @Timer
     @GetMapping("issue")
     public List<Issue> getAll() {
         return list;
