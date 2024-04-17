@@ -1,0 +1,11 @@
+# имя нужно обязательно - с помощью него производится регистрация в общем сервисе
+spring:
+  application:
+    name: reader-service
+server:
+  port: 8780
+#  данные об Eureka для регистрации
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

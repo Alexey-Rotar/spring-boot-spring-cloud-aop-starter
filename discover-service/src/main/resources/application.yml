@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: eureka-discoverer-service
+server:
+#  стандартный порт для Eureka
+  port: 8761
+eureka:
+  client:
+#    Eureka сама в себе не должна регистрироваться
+    register-with-eureka: false
