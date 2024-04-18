@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.AutoConfiguration.imports - используется для автоматического импорта в проект файлов конфигурации
+нужно использовать только такое имя файла, должен располагаться только в resources.META-INF.spring
+
+TimerAnnotationAutoConfiguration.java - конфигурация для работы Timer (TimerAspect), возвращает бин TimerAspect
