@@ -19,8 +19,9 @@ public class TimerAspect {
     @Around("annotatedClassMethods() || annotatedMethods()") // применение поинткатов
         public Object timer(ProceedingJoinPoint joinPoint) throws Throwable {
         long start = System.currentTimeMillis();
+        Object res = null;
         try {
-            joinPoint.proceed();
+            res = joinPoint.proceed();
         } catch (Throwable e) {
             throw e;
         } finally {
@@ -31,6 +32,6 @@ public class TimerAspect {
                     + (System.currentTimeMillis() - start)
                     + ")");
         }
-        return null;
+        return res;
     }
 }
